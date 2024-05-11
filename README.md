@@ -1,19 +1,12 @@
 # Git Évaluation - Projet *Minitrice*
 
-
-Module Git (14h)
-
-Date: 11/05/24
-
-ESGI (Eductive), 3ème année
-
-Auteur: Paul Schuhmacher
+Module Git
 
 Version: 1
 
 <hr>
 
-Ce projet consiste à créer un programme qui permet de réaliser les 4 opérations arithmétiques élémentaires (`+`, `-`, `*` et `/`) entre deux nombres positifs. 
+Ce projet consiste à créer un programme capable de réaliser les 4 opérations arithmétiques élémentaires (`+`, `-`, `*` et `/`) entre deux nombres positifs. 
 
 - [Git Évaluation - Projet *Minitrice*](#git-évaluation---projet-minitrice)
   - [Objectifs](#objectifs)
