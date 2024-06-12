@@ -17,7 +17,11 @@ multiplication() {
 
 # Fonction pour la division
 division() {
+    if [ $2 -ne 0 ]; then
         echo $(( $1 / $2 ))
+    else
+        echo "Erreur: Division par zéro"
+    fi
 }
 
 # Fonction pour évaluer une expression
@@ -36,6 +40,7 @@ evaluate_expression() {
             division $1 $3
             ;;
         *)
+            echo "Opérateur invalide"
             return 1
             ;;
     esac
@@ -74,7 +79,11 @@ main() {
                 if [[ $? -eq 0 ]]; then
                     echo "$input = $result"
                 fi
+            else
+                echo "Erreur de syntaxe pour le calcul: \"$input\""
             fi
+        else
+            echo "Erreur de syntaxe pour le calcul: \"$input\""
         fi
     done
 }
