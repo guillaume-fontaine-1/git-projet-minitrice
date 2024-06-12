@@ -21,27 +21,35 @@ Ce projet consiste à créer un programme capable de réaliser les 4 opérations
    git clone <url-du-dépôt>
    cd <nom-du-dépôt>
    ```
+2. Accordez les droits d'exécution sur les fichiers `minitrice` et `generator`.
+   ```bash
+   chmod +x minitrice.sh generator.sh
+   ```
 
 ## Exécution
 ### Commandes d'Exécution
 Pour exécuter le programme, utilisez les commandes suivantes :
 - Pour exécuter une expression arithmétique :
   ```bash
-  $ ./minitrice [expression]
+  $ ./minitrice.sh [expression]
   ```
 - Pour générer une expression :
   ```bash
-  $ ./generator [nombre]
+  $ ./generator.sh [nombre]
   ```
 
 ### Exemples d'Utilisation
 - Exemple d'utilisation pour réaliser une addition :
   ```bash
-  $ ./minitrice 3+3
+  $ ./minitrice.sh 3+3
   ```
   Sortie attendue :
   ```
   6
+  ```
+  Autre example : 
+  ```bash
+  $ ./generator.sh 45 | ./minitrice.sh
   ```
 
 ## Remarques
